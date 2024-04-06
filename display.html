@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Name and Surname</title>
+</head>
+<body>
+    <h2>Display Name and Surname</h2>
+    <div id="nameDisplay"></div>
+
+    <script>
+        // Retrieve inputs from localStorage
+        var firstName = localStorage.getItem('firstName');
+        var lastName = localStorage.getItem('lastName');
+
+        // Display the inputs
+        var nameDisplay = document.getElementById('nameDisplay');
+        nameDisplay.innerHTML = '<p>Name: ' + firstName + '</p><p>Surname: ' + lastName + '</p>';
+    </script>
+</body>
+</html>
